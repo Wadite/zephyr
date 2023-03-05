@@ -136,6 +136,8 @@ void main(void)
         	k_sleep(K_SECONDS(5));
     	}
 	
+	k_msleep(10000);
+	
 #if defined(CONFIG_NET_SOCKETS_SOCKOPT_TLS)
 	tls_credential_add(CA_CERTIFICATE_TAG, TLS_CREDENTIAL_CA_CERTIFICATE,
 			   ca_certificate, sizeof(ca_certificate));
